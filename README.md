@@ -79,7 +79,19 @@
   - assume that trash is lego, and send type of trash = "lego" to main node by response of service
 - [remote PC] [Terminal_8]rosrun kong_test kong_test_node.py
   - service server for manipulation which execute saved trajectory for each trash
-  - 
+  - save the each trashes' pickup joints state(except joint1)
+  - when trash type come from main node set trash joint state to that one 
+  - execute 
+    1. open gripper
+    2. pick up trash state
+    3. close gripper
+    4. holding state
+  - when "place" come from main node
+  - execute
+    1. close gripper
+    2. place state
+    3. open gripper
+    4. holding state
 - [remote PC] [Terminal_9]rosrun robotics_main robotics_main_node.py
   - main node 
   - service client for find_trash_pos, set_trash_mid_locate, execute_manipulation servers...
