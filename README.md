@@ -35,6 +35,9 @@
 - more delicate image processing or deep learning algorithm to detect all trashes and recognize them.
 - more precise transform equation(uwb_to_map, ceilingImg_to_map) it's hard to get precise position of trash from image.
 - when try each script respectively it works, but try together it's hard to work..., optimize the communication of each program is needded
+  - fail to call service error 
+  - commend to go forward not active sometimes
+  - etc...
 # How to run the code
 - roscore
 
