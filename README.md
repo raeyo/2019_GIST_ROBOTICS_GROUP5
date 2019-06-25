@@ -58,14 +58,42 @@
   - to activate manipulation move group
 - [remote PC] [Terminal_5] roslaunch healthcare_robotics_uwb_sub uwb_sub_py.launch
   - by using uwb sensor initialize the position and orientation of turtlebot and launch navigation tool
+  - get uwb sensor data : subscribe uwb topic
+  - commend to turtlebot : publish move command(twist) to /cmd topic
+  - use linear regression equation to calculate slope
+  - subprocess to execute navigation tool
 - [remote PC] [Terminal_6] python getTrashPos.py
   - service server for get nearest trash position from ceiling camera image
+  - service server that wait a sign from main node that find the trash and send position and direction of trash
+  - find trash by color detection on hsv channel
+  - only find legos... and turtlebot
+  - find nearest trash from turtlebot
+  - calculate them to trasform coordinate from image_pixel to map_coordinate
+  - send postion and direction info by response of service
 - [remote PC] [Terminal_7] python cv_test_node.py
   - service server for setting turtlebot direction to middle of trash by using raspicam 
+  - service server that wait a sign from main node and send them a type of trash
+  - detect lego use color detection
+  - commend to turtlebot rotate until lego locate middle of image from raspicam
+  - In this algorithm there is no recognize code...
+  - assume that trash is lego, and send type of trash = "lego" to main node by response of service
 - [remote PC] [Terminal_8]rosrun kong_test kong_test_node.py
   - service server for manipulation which execute saved trajectory for each trash
+  - 
 - [remote PC] [Terminal_9]rosrun robotics_main robotics_main_node.py
   - main node 
+  - service client for find_trash_pos, set_trash_mid_locate, execute_manipulation servers...
+  - also commend turtlebot to move forward by publish to /cmd topic
+  - overview : repeat 1~7 until there is no trash.
+    1. find trash position 
+    2. move to near trash (to move trash on the front of turtlebot)
+    3. set the trash locate on the middle
+    4. go forward to use extra equipment
+    5. pickup trash
+    6. move to trash-bin and place trash
+   
+    
+    
 
 
 
