@@ -5,6 +5,7 @@
 - Platform : Turtlebot3 with open-manipulator
 - Used Sensors : 2D_LIDAR, webcam, raspicam, uwb sensor
 - Environment : ROS-kinetic, opencv3
+- Used open source : turtlebot3 with open_manipulation packages, turtlebot3 packages, cv_bridge... etc
 # Methodology
 - Initialize position of turtlebot : Using uwb sensor
 - Get map of competition room : SLAM tool for turtlebot3
