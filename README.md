@@ -85,12 +85,12 @@
   - service client for find_trash_pos, set_trash_mid_locate, execute_manipulation servers...
   - also commend turtlebot to move forward by publish to /cmd topic
   - overview : repeat a~f until there is no trash.
-    a. find trash position 
-    b. move to near trash (to move trash on the front of turtlebot)
-    c. set the trash locate on the middle
-    d. go forward to use extra equipment
-    e. pickup trash
-    f. move to trash-bin and place trash
+    - find trash position 
+    - move to near trash (to move trash on the front of turtlebot)
+    - set the trash locate on the middle
+    - go forward to use extra equipment
+    - pickup trash
+    - move to trash-bin and place trash
    
     
     
