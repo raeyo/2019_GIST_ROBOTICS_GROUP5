@@ -80,14 +80,12 @@
 - [remote PC] [Terminal_8]rosrun kong_test kong_test_node.py
   - service server for manipulation which execute saved trajectory for each trash
   - save the each trashes' pickup joints state(except joint1)
-  - when trash type come from main node set trash joint state to that one 
-  - execute 
+  - when trash type come from main node set trash joint state to that one and execute 
     1. open gripper
     2. pick up trash state
     3. close gripper
     4. holding state
-  - when "place" come from main node
-  - execute
+  - when "place" come from main node, execute
     1. close gripper
     2. place state
     3. open gripper
