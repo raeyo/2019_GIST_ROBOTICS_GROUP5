@@ -31,6 +31,10 @@
   - only can pick up the trash locate at the right front of turtlebot
   - set the turtlebot direction to locate the trash front of turtlebot : use image processing from raspicam 
   - set the trash(lego) orientation : use extra equipment
+# How to Improve Task
+- more delicate image processing or deep learning algorithm to detect all trashes and recognize them.
+- more precise transform equation : uwb_to_map, ceilingImg_to_map
+- etc...
 # How to run the code
 - roscore
 
