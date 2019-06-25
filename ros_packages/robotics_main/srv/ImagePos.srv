@@ -1,0 +1,7 @@
+bool tag
+---
+bool is_trash
+float64 x
+float64 y
+float64 dx
+float64 dy
