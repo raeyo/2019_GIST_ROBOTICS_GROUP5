@@ -1,4 +1,9 @@
 # 2019_GIST_ROBOTICS_GROUP5
+
+The report made by .docx file named as '(TEAM5)GIST ROBOTICS FINAL PROJECT' 
+Belows are shortcut explain
+All videos and images are located at each folders
+
 2019_Spring_Robotics_Project_Repository_Group5
 # Overview
 - Objective : Make autonomous pick trash and place them in trashbin
